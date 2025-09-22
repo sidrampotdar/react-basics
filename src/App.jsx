@@ -1,17 +1,15 @@
-import Student from './Student.jsx'
-function App() {
-  // props = read-only properties that are shared between components.
-// A parent component can send data to a child component.
-// <Component key=value />
+import UserGreeting from "./UserGreeting";
+
+function App(){
+
   return(
-   <>
-   <Student name="SpongeBob" age={25} isStudent={true}/>
-   <Student name="SpongeBob" age={42} isStudent={false}/>
-     <Student name="Squidward" age={50} isStudent={false}/>
-       <Student name="Sandy" age={27} isStudent={true}/>
-   </>
+
+    <>
+    <UserGreeting isLoggedIn={true} username="Sidramappa Potdar"/>
+    </>
   );
-
 }
-
-export default App;
+// conditional rendering = allows you to control what gets rendered
+// in your application based on certain conditions
+// (show, hide, or change components)
+export default App
